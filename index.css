@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.home-photo-font {
+  font-family: "Irish Grover", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hero-section {
+  background-image: url('../assets/home.png');
+  background-size:cover;
+  background-position: center;
+}
+
+.sec-description-font {
+  font-family: "Gowun Batang", serif;
+  font-weight: 400;
+  font-style: normal;
+}
