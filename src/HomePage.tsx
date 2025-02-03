@@ -114,7 +114,7 @@ function HomePage() {
               <h2 className="text-2xl font-semibold mb-4">PROFILE</h2>
               <p className="sec-description-font text-black text-sm">Here you can view and update your personal data</p>
             </div>
-            <img src="../assets/profile.png" alt="Profile" className="mt-4 w-28 h-28" />
+            <img src='../assets/profile.png' alt="Profile" className="mt-4 w-28 h-28" />
           </div>
 
           {/* Diary Section */}
