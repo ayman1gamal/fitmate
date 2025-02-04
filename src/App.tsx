@@ -5,6 +5,7 @@ import GoalSelection from './GoalSelection';
 import ActivityLevelSelection from './ActivityLevelSelection';
 import UserPreferences from './UserPreferences';
 import HomePage from './HomePage';
+import HomePageS from './HomePageS';
 
 // Component to scroll to top on route change
 function ScrollToTop() {
@@ -22,11 +23,12 @@ function App() {
     <Router>
       <ScrollToTop /> {/* Add this component inside the Router */}
       <Routes>
-        <Route path="/" element={<SignInSignUp />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/signin" element={<SignInSignUp />} />
         <Route path="/goals" element={<GoalSelection />} />
         <Route path="/activity-level" element={<ActivityLevelSelection />} />
         <Route path="/user-preferences" element={<UserPreferences />} />
-        <Route path="/home" element={<HomePage />} />
+        <Route path="/home" element={<HomePageS />} />
       </Routes>
     </Router>
   );
