@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+import  { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import SignInSignUp from './SignInSignUp';
+import Auth from './Auth';
 import GoalSelection from './GoalSelection';
 import ActivityLevelSelection from './ActivityLevelSelection';
 import UserPreferences from './UserPreferences';
@@ -20,11 +20,12 @@ function ScrollToTop() {
 
 function App() {
   return (
+
     <Router>
-      <ScrollToTop /> {/* Add this component inside the Router */}
+      <ScrollToTop /> 
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/signin" element={<SignInSignUp />} />
+        <Route path="/signin" element={<Auth />} />
         <Route path="/goals" element={<GoalSelection />} />
         <Route path="/activity-level" element={<ActivityLevelSelection />} />
         <Route path="/user-preferences" element={<UserPreferences />} />
