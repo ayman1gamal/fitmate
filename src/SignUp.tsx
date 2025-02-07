@@ -24,7 +24,7 @@ function SignUp({ toggleForm }: { toggleForm: () => void }) {
 
     setLoading(true);
     try {
-        await axios.post('https://fit-mate-samer12332-samer12332s-projects.vercel.app/api/auth/register', {
+        await axios.post('http://localhost:3000/api/auth/register', {
         username:fullName,
         email,
         password,
