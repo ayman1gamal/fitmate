@@ -22,26 +22,7 @@ function SignUp({ toggleForm }: { toggleForm: () => void }) {
       return;
     }
 
-    setLoading(true);
-    try {
-        await axios.post('http://localhost:3000/api/auth/register', {
-        username:fullName,
-        email,
-        password,
-        confirmPassword
-      });
-        navigate('/goals');
-
-    } catch (error: any) {
-      console.error('Registration error:', error);
-      if (error.response) {
-        alert(error.response.data.message +  'Registration failed.');
-      } else {
-        alert('Network error. Please try again.');
-      }
-    } finally {
-      setLoading(false);
-    }
+    navigate('/goals', { state: { email, fullName } });
   };
 
   return (
